@@ -29,9 +29,9 @@ jobs:
       run: |
         docker build -t dtsdeltasoft/docker-graphql:0.0.2 .
         
-    - name: Pull Docker Image
+    - name: Push Docker Image
       run: |
-        docker push dtsdeltasoft/docker-graphql:0.0.2 .
+        docker push dtsdeltasoft/docker-graphql:0.0.2
 
 #     - name: Build the Docker image
 #       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
